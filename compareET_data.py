@@ -65,10 +65,10 @@ df = df.melt(id_vars='timestamp')
 print(df)
 
 
-# # plot and compare
-# sns.set_context("paper", font_scale=2.0)
-# plt.figure()
-# sns.lineplot(data = df, x = 'timestamp', y = 'value', hue = 'variable')
-# plt.ylabel('ET (inches)')
-# plt.xlabel('Time')
-# plt.show()
+# plot and compare
+sns.set_context("paper", font_scale=2.0)
+plt.figure()
+sns.lineplot(data = df, x = 'timestamp', y = 'value', hue = 'variable')
+plt.ylabel('ET (inches)')
+plt.xlabel('Time')
+plt.show()
