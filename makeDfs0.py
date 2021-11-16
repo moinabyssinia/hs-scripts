@@ -17,7 +17,7 @@ import pandas as pd
 from mikeio import Dfs0
 
 dirHome = "C:\\Users\\mtadesse\\Hazen and Sawyer\\"\
-    "MIKE_Modeling_Group - Documents\\Data\\ET"
+    "MIKE_Modeling_Group - Documents\\Data\\ET\\glr_ET"
 
 os.chdir(dirHome)
 
@@ -49,7 +49,7 @@ for ii in range(1,dat.shape[1]):
     ###########################################################
 
     items.append(ItemInfo(dat.columns[ii], EUMType.Evapo_Transpiration, 
-                            EUMUnit.inch_per_day, 
+                            EUMUnit.inch, 
                                 data_value_type= DataValueType.MeanStepBackward))
 
 # generate monthly time from 12/2003 to 12/2014
